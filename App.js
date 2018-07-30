@@ -1,21 +1,26 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 
+// export default class App extends React.Component {
+//   render() {
+//     return (
+//       <View>
+//       <View style={{width: 30, height: 30, backgroundColor: 'blue'}} />
+//       <View style={{width: 80, height: 80, backgroundColor: 'green'}} />
+//       <View style={{width: 130, height: 130, backgroundColor: 'red'}} />
+//       </View>
+//     );
+//   }
+// }
 export default class App extends React.Component {
   render() {
     return (
-      <View style={styles.container}>
-        <Text>Hello World!</Text>
+      <View style={{flex: 1}}>
+      <View style={{flex: 1, backgroundColor: 'blue'}} />
+      <View style={{flex: 2, backgroundColor: 'green'}} />
+      <View style={{flex: 3, backgroundColor: 'red'}} />
       </View>
     );
   }
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});

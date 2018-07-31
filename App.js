@@ -17,7 +17,11 @@ AppRegistry.registerComponent('AwesomeProject', () => 'FlexDirection')*/
 export default class JustifyContent extends Component{
   render(){
     return(
-    <View style={{flex: 1, flexDirection: 'column', justifyContent: 'space-between'}}>
+    <View style={{flex: 1,
+        flexDirection: 'column',
+        justifyContent: 'center',
+        alignItems: 'center'
+    }}>
       <View style={{width: 30,height: 30,backgroundColor: 'black'}}/>
       <View style={{width: 30,height: 30,backgroundColor: 'yellow'}}/>
       <View style={{width: 30,height: 30,backgroundColor: 'grey'}}/>
